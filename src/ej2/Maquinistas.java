@@ -9,6 +9,7 @@ public class Maquinistas extends Empresa {
 	private int añosMaquina;
 
 	public Maquinistas() {
+		
 		MeterDatos();
 	}
 
@@ -22,7 +23,7 @@ public class Maquinistas extends Empresa {
 	public void MeterDatos() {
 		
 		System.out.println("introduce nombre: ");
-		setNombre(teclado.nextLine());
+		setNombre(teclado.next());
 		
 		System.out.println("introduce edad: ");
 		setEdad(teclado.nextInt());

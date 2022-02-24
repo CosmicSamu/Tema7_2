@@ -7,15 +7,14 @@ public class Administrativos extends Empresa{
 	private int numeroOrdenador;
 	
 	public Administrativos() {
-		nombre = teclado.nextLine();
-		edad = teclado.nextInt();
+		
 		MeterDatos();
 		
 	}
 
 	public void MeterDatos() {
 		System.out.println("introduce nombre: ");
-		setNombre(teclado.nextLine());
+		setNombre(teclado.next());
 		
 		System.out.println("introduce edad: ");
 		setEdad(teclado.nextInt());
@@ -23,8 +22,8 @@ public class Administrativos extends Empresa{
 		System.out.println("introduce tu numero de ordenador: ");
 		setNumeroOrdenador(teclado.nextInt());
 		
-		System.out.println("introduce los años con tu maquina: ");
-		setEstudios(teclado.nextLine());
+		System.out.println("introduce tu titulo: ");
+		setEstudios(teclado.next());
 		
 	}
 
